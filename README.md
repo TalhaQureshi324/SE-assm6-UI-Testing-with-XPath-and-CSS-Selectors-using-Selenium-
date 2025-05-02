@@ -28,6 +28,7 @@ This project demonstrates automated UI testing for a simple login and registrati
 Install it via terminal or command prompt:
 ```bash
 pip install selenium
+```
 
 🔧 Setup Instructions
 Clone or download this folder to your local machine.
