@@ -6,15 +6,15 @@ This project demonstrates automated UI testing for a simple login and registrati
 
 ## 📁 Files Included
 
-| File Name               | Description                                                       |
-|-------------------------|-------------------------------------------------------------------|
-| `user.html`             | HTML page with login and registration forms                       |
-| `test_login_css.py`     | Automates login using **CSS selectors**                           |
-| `test_login_xpath.py`   | Automates login using **absolute XPath**                          |
-| `test_register_css.py`  | Automates registration using **CSS selectors**                    |
-| `test_register_xpath.py`| Automates registration using **relative XPath**                   |
-| `*.png`                 | Screenshots saved during test execution                           |
-| `README.md`             | Documentation with setup, usage, and explanation                  |
+| File Name                | Description                                                       |
+|--------------------------|-------------------------------------------------------------------|
+| `user.html`              | HTML page with login and registration forms                       |
+| `test_login_css.py`      | Automates login using **CSS selectors**                           |
+| `test_login_xpath.py`    | Automates login using **absolute XPath**                          |
+| `test_register_css.py`   | Automates registration using **CSS selectors**                    |
+| `test_register_xpath.py` | Automates registration using **relative XPath**                   |
+| `*.png`                  | Screenshots saved during test execution                           |
+| `README.md`              | Documentation with setup, usage, and explanation                  |
 
 ---
 
@@ -23,94 +23,108 @@ This project demonstrates automated UI testing for a simple login and registrati
 - **Python 3.x**
 - **Google Chrome** installed
 - **ChromeDriver** (must match your Chrome version)
-- **Selenium** package:
+- **Selenium** package
 
-Install it via terminal or command prompt:
+Install Selenium via terminal or command prompt:
+
 ```bash
 pip install selenium
 ```
 
-🔧 Setup Instructions
-Clone or download this folder to your local machine.
+---
 
-Place all files in the same directory.
+## 🔧 Setup Instructions
 
-Ensure user.html path is correctly referenced in each script. Example:
+1. Clone or download this folder to your local machine.
+2. Place all files in the same directory.
+3. Ensure the correct path to `user.html` is used in each script.
+
+Example:
+
+```python
 driver.get("file:///C:/Users/Talha%20Qureshi/Desktop/SE%20assignment%206/user.html")
-Make sure spaces in the path are replaced with %20.
+```
 
-4. Launch the script you want using:
-         python test_login_css.py
-or use Run in VS Code.
+> Make sure spaces are replaced with `%20`.
 
-▶️ How to Run the Scripts
-This project is divided into two main test areas:
+4. Run the script using the terminal:
 
-🟢 Login Form (Scripts for Testing Login Only)
-Use these if you want to test the login form functionality:
+```bash
+python test_login_css.py
+```
 
-test_login_css.py → uses CSS selectors
+Or use the **Run** button inside VS Code.
 
-test_login_xpath.py → uses absolute XPath
+---
 
-These scripts will:
+## ▶️ How to Run the Scripts
 
-Locate the login input fields
+This project is divided into two main test categories:
 
-Fill in the login credentials (TalhaQureshi127, talha123456)
+---
 
-Click the login button
+### 🟢 Login Form (Testing Login Functionality)
 
-Show “Login successful!” message
+Run one of the following to test login:
 
-Save a screenshot (e.g., login_css_success.png)
+- `test_login_css.py` → Uses CSS selectors
+- `test_login_xpath.py` → Uses absolute XPath
 
-🟢 Registration Form (Scripts for Testing Registration Only)
-Use these if you want to test the registration form functionality:
+Each script will:
 
-test_register_css.py → uses CSS selectors
+- Locate and fill the username and password fields
+- Submit the login form
+- Display a **“Login successful!”** message
+- Save a screenshot (e.g., `login_css_success.png`)
 
-test_register_xpath.py → uses relative XPath
+---
 
-These scripts will:
+### 🟢 Registration Form (Testing Registration Functionality)
 
-Fill in name, email, password, and confirm password
+Run one of the following to test registration:
 
-Click the register button
+- `test_register_css.py` → Uses CSS selectors
+- `test_register_xpath.py` → Uses relative XPath
 
-Show “Registration successful!” message
+Each script will:
 
-Save a screenshot (e.g., register_xpath_success.png)
+- Fill name, email, password, and confirm password
+- Submit the registration form
+- Display a **“Registration successful!”** message
+- Save a screenshot (e.g., `register_xpath_success.png`)
 
-💡 Features Demonstrated
-XPath & CSS selector usage in Selenium
+---
 
-Difference between absolute and relative XPath
+## 💡 Features Demonstrated
 
-Clean form UI using HTML & CSS
+- XPath & CSS selector usage in Selenium
+- Difference between absolute and relative XPath
+- Clean, styled login and registration forms (HTML/CSS)
+- Success message handling with JavaScript
+- Screenshot capture for test verification
 
-Success message display simulation
+---
 
-Screenshot capture via Selenium
+## ✅ Output Summary
 
-✅ Output Summary
-✅ Browser opens
+- ✅ Browser launches
+- ✅ Form fields are auto-filled
+- ✅ Success message is shown
+- ✅ Screenshot is saved
+- ✅ User presses Enter to close browser manually
 
-✅ Form fields are auto-filled
+---
 
-✅ Success message appears
+## 🧪 Screenshot Files
 
-✅ Screenshot is saved in the project folder
+These screenshots are automatically saved during each test run:
 
-✅ User presses Enter to close browser window
+| Script File              | Screenshot Name               |
+|--------------------------|-------------------------------|
+| `test_login_css.py`      | `login_css_success.png`       |
+| `test_login_xpath.py`    | `login_xpath_success.png`     |
+| `test_register_css.py`   | `register_css_success.png`    |
+| `test_register_xpath.py` | `register_xpath_success.png`  |
 
-🧪 Screenshot Files
-These are auto-generated after each test:
-
-Script File	Screenshot Name
-test_login_css.py	        login_css_success.png
-test_login_xpath.py	      login_xpath_success.png
-test_register_css.py	    register_css_success.png
-test_register_xpath.py	  register_xpath_success.png
-
+---
 
